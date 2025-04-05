@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tempo Design System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 fixed w-full z-50">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600">Tempo</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#section1" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#section2" class="text-gray-600 hover:text-blue-600">Services</a>
+        <a href="#section3" class="text-gray-600 hover:text-blue-600">Projects</a>
+        <a href="#section4" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 pt-24">
+    <div class="absolute inset-0 z-0 opacity-20">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl"></div>
+    </div>
+    <div class="container mx-auto px-4 z-10 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">Modern Web Experience</h1>
+      <p class="text-xl md:text-2xl mb-12 text-gray-700 leading-relaxed">
+        Create beautiful, responsive websites with our professional design system. Scroll down to explore our features and capabilities.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <button class="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all shadow-md text-lg font-medium">Get Started</button>
+        <button class="px-8 py-4 bg-white text-blue-600 border border-blue-600 rounded-full hover:bg-blue-50 transition-all shadow-md text-lg font-medium">Learn More</button>
+      </div>
+      <div class="mt-12 animate-bounce">
+        <a href="#section1" class="text-blue-500 hover:text-blue-700">Scroll Down ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Sections -->
+  <section id="section1" class="py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">About Our Company</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">We build innovative solutions for forward-thinking businesses</p>
+  </section>
+
+  <section id="section2" class="py-20 bg-slate-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">Comprehensive solutions tailored to your business needs</p>
+  </section>
+
+  <section id="section3" class="py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">Explore our portfolio of successful client partnerships</p>
+  </section>
+
+  <section id="section4" class="py-20 bg-slate-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">Ready to start your project? Contact our team today</p>
+  </section>
+
+  <section id="section5" class="py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Our Expert Team</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto">Meet the talented professionals behind our success</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Tempo</h3>
+          <p class="text-gray-400">Creating beautiful digital experiences that drive results.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Services</a></li>
+            <li><a href="#" class="hover:text-white">Team</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+            <li><a href="#" class="hover:text-white">Documentation</a></li>
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>hello@tempo.com</li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-500">&copy; <span id="year"></span> Tempo Design System. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
